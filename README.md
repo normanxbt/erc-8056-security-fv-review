@@ -8,7 +8,7 @@ It evaluates a pinned `SecuritiesToken` implementation with:
 - a concrete Foundry access-control regression test; and
 - deterministic Foundry property-based tests for conversions and multiplier activation.
 
-This is a public research artifact. The Ethereum Magicians draft is included for review, but it has not been posted, and no pull request has been submitted to `ethereum/ERCs`.
+This is a public research artifact. A focused [Draft specification PR](https://github.com/ethereum/ERCs/pull/1944) has been submitted to `ethereum/ERCs`. The Ethereum Magicians contribution is prepared in this repository and is pending publication.
 
 ## Review map
 
@@ -49,7 +49,7 @@ Cloud verification requires the caller's own Certora credentials:
 
 ## Publication sequence
 
-1. Review this public repository and the included forum draft.
-2. Post the forum contribution only after separate approval.
-3. Collect author feedback on the proposed property templates.
-4. If the ERC authors agree with the proposed direction, prepare a focused specification PR for separate review.
+1. Publish this reproducible repository.
+2. Open a focused Draft specification PR.
+3. Post the security/FV contribution to the ERC-8056 discussion and link the Draft PR.
+4. Collect author feedback and revise the normative wording as needed.

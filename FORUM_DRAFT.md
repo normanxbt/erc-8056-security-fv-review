@@ -8,6 +8,8 @@ I prepared a reproducible, implementation-scoped security and formal-verificatio
 
 Repository: [github.com/normanxbt/erc-8056-security-fv-review](https://github.com/normanxbt/erc-8056-security-fv-review)
 
+Draft specification PR: [ethereum/ERCs#1944](https://github.com/ethereum/ERCs/pull/1944)
+
 The repository contains the pinned Solidity source, Certora specifications and configurations, deterministic Foundry property tests, exact reproduction commands, source hashes, and direct Prover reports.
 
 For this implementation, the Certora suite establishes that:
@@ -28,7 +30,7 @@ The implementation has a scheduled two-argument updater and pending-state getter
 3. any implementation-provided multiplier updater must machine-check its stated authorization policy; and
 4. for an implementation with pending updates, a successful scheduling call must make its pending-state getters expose exactly the accepted multiplier and effective timestamp.
 
-Would the authors be open to a focused follow-up specification PR that expresses these as security requirements or recommended machine-checkable invariants, while leaving updater mechanics implementation-defined?
+I opened the linked Draft PR to express the portable properties as focused security requirements while leaving updater mechanics implementation-defined. Feedback on the scope and normative wording would be welcome.
 
 Prover reports:
 
@@ -37,7 +39,3 @@ Prover reports:
 - [Raw value-flow properties](https://prover.certora.com/output/10277929/aca634da5b1d46fba00d988ad5c361bc)
 - [Paused-policy enforcement](https://prover.certora.com/output/10277929/618d96ec5e0640fab8e37522045a655c)
 - [Compliance-policy enforcement](https://prover.certora.com/output/10277929/ded1c6af61774d79bb6f35f7328aa70b)
-
----
-
-Review note: draft only. Do not post until the repository contents and wording receive separate approval.
