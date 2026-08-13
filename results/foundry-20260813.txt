@@ -1,0 +1,14 @@
+No files changed, compilation skipped
+
+Ran 8 tests for test/ERC8056SecurityProperties.t.sol:ERC8056SecurityPropertiesTest
+[PASS] testFuzz_ConversionMatchesFloorFormula(uint128,uint128,uint256) (runs: 1000, μ: 39030, ~: 39030)
+[PASS] testFuzz_ConversionsAreMonotonic(uint128,uint128,uint128,uint128,uint256) (runs: 1000, μ: 42783, ~: 42783)
+[PASS] testFuzz_MultiplierSchedulingAndActivationPreserveRawAccounting(uint128,uint256) (runs: 1000, μ: 106967, ~: 108082)
+[PASS] testFuzz_RawToUIToRawNeverCreatesRawAmount(uint128,uint256) (runs: 1000, μ: 38536, ~: 38536)
+[PASS] testFuzz_ToUIFloorAdditivity(uint128,uint128,uint256) (runs: 1000, μ: 40737, ~: 40737)
+[PASS] testFuzz_UIViewsDelegateToConversion(uint128,uint256) (runs: 1000, μ: 108626, ~: 109741)
+[PASS] test_UnprivilegedCallerCannotReachPrivilegedEntryPoints() (gas: 51409)
+[PASS] test_ZeroConversionsAreZero() (gas: 16758)
+Suite result: ok. 8 passed; 0 failed; 0 skipped; finished in 65.52ms (326.56ms CPU time)
+
+Ran 1 test suite in 75.44ms (65.52ms CPU time): 8 tests passed, 0 failed, 0 skipped (8 total tests)
